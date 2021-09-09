@@ -14,27 +14,39 @@ const Sidebar = () => {
       <ul className="sidebarList">
         <li className="sidebarItem">
           <DashboardIcon className="sidebarIcon" />
-          <a className="sidebarLink">Dashboard</a>
+          <Link to="/" className="sidebarLink">
+            Dashboard
+          </Link>
         </li>
         <li className="sidebarItem">
           <ChatIcon className="sidebarIcon" />
-          <a className="sidebarLink">Messenger</a>
+          <Link to="/messenger" className="sidebarLink">
+            Messenger
+          </Link>
         </li>
         <li className="sidebarItem">
           <DateRangeIcon className="sidebarIcon" />
-          <a className="sidebarLink">Calendar</a>
+          <Link to="/calendar" className="sidebarLink">
+            Calendar
+          </Link>
         </li>
         <li className="sidebarItem">
           <StorageIcon className="sidebarIcon" />
-          <a className="sidebarLink">Database</a>
+          <Link to="/database" className="sidebarLink">
+            Database
+          </Link>
         </li>
         <li className="sidebarItem">
           <EqualizerOutlinedIcon className="sidebarIcon" />
-          <a className="sidebarLink">Attendance</a>
+          <Link to="/attendance" className="sidebarLink">
+            Attendance
+          </Link>
         </li>
         <li className="sidebarItem">
           <SettingsOutlinedIcon className="sidebarIcon" />
-          <a className="sidebarLink">Settings</a>
+          <Link to="/settings" className="sidebarLink">
+            Settings
+          </Link>
         </li>
       </ul>
     </div>

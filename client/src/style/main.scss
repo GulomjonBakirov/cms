@@ -30,11 +30,16 @@ $textColor: #acaeb4;
         color: $textColor;
         cursor: pointer;
         margin: 20px 0;
-        &:hover {
+        &:hover .sidebarLink,
+        &:hover .sidebarIcon {
           color: $mainColor;
         }
         .sidebarIcon {
           margin-right: 15px;
+        }
+        .sidebarLink {
+          text-decoration: none;
+          color: $textColor;
         }
       }
     }

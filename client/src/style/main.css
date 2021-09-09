@@ -48,12 +48,18 @@
   margin: 20px 0;
 }
 
-.App .Sidebar .sidebarList .sidebarItem:hover {
+.App .Sidebar .sidebarList .sidebarItem:hover .sidebarLink,
+.App .Sidebar .sidebarList .sidebarItem:hover .sidebarIcon {
   color: #39ba76;
 }
 
 .App .Sidebar .sidebarList .sidebarItem .sidebarIcon {
   margin-right: 15px;
+}
+
+.App .Sidebar .sidebarList .sidebarItem .sidebarLink {
+  text-decoration: none;
+  color: #acaeb4;
 }
 
 .App .Rightbar {
