@@ -6,6 +6,16 @@
 $mainColor: #39ba76;
 $textColor: #acaeb4;
 
+// ::-webkit-scrollbar {
+//   width: 5px;
+// }
+// ::-webkit-scrollbar-truck {
+//   background-color: #f1f1f1;
+// }
+
+// ::-webkit-scrollbar-thumb {
+//   background-color: #b8b5b5;
+// }
 .App {
   display: flex;
   justify-content: space-between;
@@ -14,6 +24,10 @@ $textColor: #acaeb4;
   padding: 0 20px;
   .Sidebar {
     flex: 2;
+    height: calc(100vh - 50px);
+    position: sticky;
+    top: 50px;
+    border-right: 3px solid #f1f1f1;
     .sidebarLogo {
       color: $mainColor;
       font-size: 50px;
@@ -21,7 +35,6 @@ $textColor: #acaeb4;
       line-height: 54px;
     }
     .sidebarList {
-      margin-top: 30px;
       list-style-type: none;
       .sidebarItem {
         display: flex;
@@ -34,6 +47,7 @@ $textColor: #acaeb4;
         &:hover .sidebarIcon {
           color: $mainColor;
         }
+
         .sidebarIcon {
           margin-right: 15px;
         }
@@ -44,10 +58,30 @@ $textColor: #acaeb4;
       }
     }
   }
-  .Rightbar {
-    flex: 3;
-  }
   .Feed {
     flex: 5;
+    padding-top: 20px;
+    padding-left: 15px;
+    .AdminDashboard {
+      .search {
+        display: flex;
+        align-items: center;
+
+        .searchIcon {
+          color: $textColor;
+          margin-right: 5px;
+        }
+        .searchInput {
+          width: 70%;
+          border: none;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
   }
+}
+.Rightbar {
+  flex: 3;
 }
