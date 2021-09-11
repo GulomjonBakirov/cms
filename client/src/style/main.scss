@@ -3,8 +3,14 @@
   padding: 0;
 }
 
-$mainColor: #39ba76;
+$swatch_6: #39ba76;
 $textColor: #acaeb4;
+$swatch_1: #eff6f2;
+$swatch_2: #b2ddc5;
+$swatch_3: #c0bdc0;
+$swatch_4: #383538;
+$swatch_5: #908877;
+$swatch_6: #1ba347;
 
 // ::-webkit-scrollbar {
 //   width: 5px;
@@ -29,7 +35,7 @@ $textColor: #acaeb4;
     top: 50px;
     border-right: 3px solid #f1f1f1;
     .sidebarLogo {
-      color: $mainColor;
+      color: $swatch_6;
       font-size: 50px;
       font-weight: 600;
       line-height: 54px;
@@ -45,7 +51,7 @@ $textColor: #acaeb4;
         margin: 20px 0;
         &:hover .sidebarLink,
         &:hover .sidebarIcon {
-          color: $mainColor;
+          color: $swatch_6;
         }
 
         .sidebarIcon {
@@ -79,9 +85,44 @@ $textColor: #acaeb4;
           }
         }
       }
+      .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        .menuItem {
+          display: flex;
+          align-items: center;
+          .menuItemIcon {
+            background-color: #121212;
+            color: #fff;
+            padding: 3px;
+            border-radius: 3px;
+            font-size: 32px;
+          }
+        }
+      }
     }
   }
 }
 .Rightbar {
   flex: 3;
+}
+
+// change ant design
+.ant-tabs-ink-bar {
+  background: $swatch_6;
+}
+.ant-tabs-tab {
+  &:hover {
+    color: $swatch_6;
+  }
+}
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: $swatch_6;
+}
+.ant-tabs-tab-btn {
+  &:active {
+    color: $swatch_6;
+  }
 }

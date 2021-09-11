@@ -1,5 +1,6 @@
 import Rightbar from "./components/Rightbar";
 import Sidebar from "./components/Sidebar";
+import "antd/dist/antd.css";
 import "./style/main.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";

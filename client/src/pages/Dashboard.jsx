@@ -21,19 +21,19 @@ const Dashboard = () => {
       <h1 className="dashboardTitle">Dashboard</h1>
       <ul className="menu">
         <li className="menuItem">
-          <LocalLibraryIcon />
+          <LocalLibraryIcon className="menuItemIcon" />
           <Link to="/dashboard/students" className="menuLink">
             Students <span className="val">302</span>
           </Link>
         </li>
         <li className="menuItem">
-          <FaChalkboardTeacher />
+          <FaChalkboardTeacher className="menuItemIcon" />
           <Link to="/dashboard/teachers" className="menuLink">
             Teachers <span className="val">33</span>
           </Link>
         </li>
         <li className="menuItem">
-          <BsFillPersonLinesFill />
+          <BsFillPersonLinesFill className="menuItemIcon" />
           <Link to="/dashboard/staffs" className="menuLink">
             Staffs <span className="val">28</span>
           </Link>

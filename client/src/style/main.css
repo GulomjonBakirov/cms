@@ -27,7 +27,7 @@
 }
 
 .App .Sidebar .sidebarLogo {
-  color: #39ba76;
+  color: #1ba347;
   font-size: 50px;
   font-weight: 600;
   line-height: 54px;
@@ -54,7 +54,7 @@
 
 .App .Sidebar .sidebarList .sidebarItem:hover .sidebarLink,
 .App .Sidebar .sidebarList .sidebarItem:hover .sidebarIcon {
-  color: #39ba76;
+  color: #1ba347;
 }
 
 .App .Sidebar .sidebarList .sidebarItem .sidebarIcon {
@@ -97,9 +97,55 @@
   outline: none;
 }
 
+.App .Feed .AdminDashboard .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+}
+
+.App .Feed .AdminDashboard .menu .menuItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App .Feed .AdminDashboard .menu .menuItem .menuItemIcon {
+  background-color: #121212;
+  color: #fff;
+  padding: 3px;
+  border-radius: 3px;
+  font-size: 32px;
+}
+
 .Rightbar {
   -webkit-box-flex: 3;
       -ms-flex: 3;
           flex: 3;
+}
+
+.ant-tabs-ink-bar {
+  background: #1ba347;
+}
+
+.ant-tabs-tab:hover {
+  color: #1ba347;
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #1ba347;
+}
+
+.ant-tabs-tab-btn:active {
+  color: #1ba347;
 }
 /*# sourceMappingURL=main.css.map */
