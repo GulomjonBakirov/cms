@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-$swatch_6: #39ba76;
+$mainColor: #76c39a;
 $textColor: #acaeb4;
 $swatch_1: #eff6f2;
 $swatch_2: #b2ddc5;
@@ -85,20 +85,38 @@ $swatch_6: #1ba347;
           }
         }
       }
+      .dashboardTitle {
+        margin-top: 15px;
+        font-weight: 800;
+      }
       .menu {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
         list-style-type: none;
         .menuItem {
           display: flex;
-          align-items: center;
+          align-items: flex-start;
+          margin-right: 45px;
           .menuItemIcon {
-            background-color: #121212;
+            background-image: linear-gradient($mainColor, $swatch_6);
             color: #fff;
-            padding: 3px;
-            border-radius: 3px;
-            font-size: 32px;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 40px;
+            margin-right: 10px;
+          }
+          .menuLink {
+            display: flex;
+            flex-direction: column;
+            color: $textColor;
+            font-size: 12px;
+
+            span {
+              color: #111;
+              font-size: 24px;
+              line-height: 20px;
+            }
           }
         }
       }

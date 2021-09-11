@@ -97,13 +97,18 @@
   outline: none;
 }
 
+.App .Feed .AdminDashboard .dashboardTitle {
+  margin-top: 15px;
+  font-weight: 800;
+}
+
 .App .Feed .AdminDashboard .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -114,17 +119,38 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-right: 45px;
 }
 
 .App .Feed .AdminDashboard .menu .menuItem .menuItemIcon {
-  background-color: #121212;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#76c39a), to(#1ba347));
+  background-image: linear-gradient(#76c39a, #1ba347);
   color: #fff;
-  padding: 3px;
-  border-radius: 3px;
-  font-size: 32px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+.App .Feed .AdminDashboard .menu .menuItem .menuLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #acaeb4;
+  font-size: 12px;
+}
+
+.App .Feed .AdminDashboard .menu .menuItem .menuLink span {
+  color: #111;
+  font-size: 24px;
+  line-height: 20px;
 }
 
 .Rightbar {
