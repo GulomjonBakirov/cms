@@ -121,6 +121,15 @@ $swatch_6: #1ba347;
         }
       }
     }
+    // .AdminCalendar {
+    //   .rbc-calendar {
+    //     .rbc-toolbar {
+    //       .rbc-btn-group {
+    //         display: none;
+    //       }
+    //     }
+    //   }
+    // }
   }
 }
 .Rightbar {
@@ -143,4 +152,9 @@ $swatch_6: #1ba347;
   &:active {
     color: $swatch_6;
   }
+}
+
+//calendar
+.rbc-btn-group {
+  display: none;
 }

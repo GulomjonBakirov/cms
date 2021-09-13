@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import Messenger from "./pages/Messenger";
 import Attendance from "./pages/Attendance";
-import Calendar from "./pages/Calendar";
+import Calendar from "./pages/Calendar2";
 import Settings from "./pages/Settings";
 import Database from "./pages/Database";
 

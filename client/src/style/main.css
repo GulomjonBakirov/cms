@@ -174,4 +174,8 @@
 .ant-tabs-tab-btn:active {
   color: #1ba347;
 }
+
+.rbc-btn-group {
+  display: none;
+}
 /*# sourceMappingURL=main.css.map */
